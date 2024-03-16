@@ -1,0 +1,114 @@
+{
+    "name": "NavigationInputs",
+    "maps": [
+        {
+            "name": "CameraControlMap",
+            "id": "e0dc4522-073c-4d3c-be30-ca8bc33dc846",
+            "actions": [
+                {
+                    "name": "InputMoveAction",
+                    "type": "Value",
+                    "id": "7f1a8169-b07c-49a4-b8cf-836ac2744681",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "InputPositionAction",
+                    "type": "Value",
+                    "id": "4e5b03ec-83a5-4738-8493-bfe83aa038a6",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "InputPagingAction",
+                    "type": "Value",
+                    "id": "f5955579-1f26-4836-94b7-8cd347b32ecd",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "InputPressAction2",
+                    "type": "Button",
+                    "id": "e1e35471-1912-4597-b8bc-0f91694d810c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "InputPressAction3",
+                    "type": "Button",
+                    "id": "2f9b8c4a-968a-42bb-a7ba-2f331aed915d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "9992c0ce-f87c-4302-8a86-6b36dd41957a",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "InputMoveAction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "497b69f6-b47b-421d-8d06-56ef4d0b91de",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "InputPositionAction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ac5bbdee-1d4b-47ae-b661-9b92f9e7cf5e",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "InputPressAction2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9f060795-6280-4a02-8d04-dfe6b1ee5dd0",
+                    "path": "<Mouse>/middleButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "InputPressAction3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "95bd8296-be1a-433c-9876-2d0c00ed2630",
+                    "path": "<Mouse>/scroll",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "InputPagingAction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
