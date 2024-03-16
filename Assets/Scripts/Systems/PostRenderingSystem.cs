@@ -1,7 +1,6 @@
 using Unity.Entities;
 using Unity.Collections;
 using Unity.Collections.LowLevel.Unsafe;
-using UnityEngine;
 using Unity.Burst;
 using Unity.Mathematics;
 
@@ -14,7 +13,7 @@ public unsafe partial struct PostRenderingSystem : ISystem, ISystemStartStop
     private ComponentTypeHandle<ChunkDataCoord> m_dataCoordHandle;
     private BufferTypeHandle<ChunkDataBuffer> m_dataBufferHandle;
 
-
+    private Random m_rng;
 
     public void OnCreate(ref SystemState state)
     {
@@ -30,10 +29,11 @@ public unsafe partial struct PostRenderingSystem : ISystem, ISystemStartStop
     {
         if (!SystemAPI.TryGetSingleton(out CanvasSize size))
             return;
-
+        m_rng = new Random(1024);
         m_prevTickDataBuffer = new NativeArray<byte>(size.x * size.y, Allocator.Persistent);
         for (int i = 0; i < size.x*size.y; i++)
         {
+            //m_prevTickDataBuffer[i] = m_rng.NextFloat() > 0.5f ? (byte)0x00 : (byte)0x01;
             m_prevTickDataBuffer[i] = (byte)(i%2);
         }
         state.EntityManager.AddComponentData(state.SystemHandle, new Singleton

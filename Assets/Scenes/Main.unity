@@ -156,8 +156,8 @@ MonoBehaviour:
   m_mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
   m_material: {fileID: 2100000, guid: 51b35082033a645449ff1139d2711829, type: 2}
   size:
-    x: 5000
-    y: 5000
+    x: 7000
+    y: 7000
 --- !u!4 &148494810
 Transform:
   m_ObjectHideFlags: 0
@@ -385,7 +385,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2550
+  orthographic size: 3550
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -431,7 +431,7 @@ MonoBehaviour:
   m_camera: {fileID: 330585545}
   m_cameraTransform: {fileID: 330585546}
   m_zoomSpeed: 20
-  m_initialZoom: 2550
+  m_initialZoom: 3550
   m_zoomRange: {x: 20, y: 1000000}
   m_scrollEdgeWidth: {x: 10, y: 10}
 --- !u!1 &738733521
